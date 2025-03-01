@@ -30,7 +30,7 @@ export default function NavBar() {
             </ul>
             <ul className="navbar-nav ms-3">
               <li className="nav-item">
-              <Link class="btn btn-primary" to="/collaborate" role="button">Lets Collaborate</Link>
+              <Link className="btn btn-primary" to="/collaborate" role="button">Lets Collaborate</Link>
               </li>
             </ul>
           </div>
