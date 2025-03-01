@@ -10,6 +10,7 @@ import Careers from "./Component/Careers";
 import Blog from "./Component/Blog";
 import Home from "./Component/Home";
 import Collaborate from "./Component/Collaborate";
+import BlogItem from "./Component/BlogItem";
 
 function App() {
   return (
@@ -29,6 +30,12 @@ function App() {
           <Route exact path="/careers" element={<Careers />} />
           <Route exact path="/blog" element={<Blog />} />
           <Route exact path="/collaborate" element={<Collaborate />} />
+          <Route
+            exact path="/blog/blogItem"
+            element={
+              <BlogItem />
+            }
+          />
         </Routes>
       </Router>
     </>
