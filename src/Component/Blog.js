@@ -21,12 +21,21 @@ export default function Blog() {
     fetchArticles();
   }, []);
 
-  const handleRowClick = (userId) => {
-    setSelectedRow(userId);
+  const handleRowClick = (element) => {
+    setSelectedRow(element.userId);
+    if (isMobileDevice()) {
+      navigate(`/blog/blogItem`, { state: { element } });
+    }
   };
 
   const handleRowDoubleClick = (element) => {
-    navigate(`/blog/blogItem`, { state: { element } });
+    if (!isMobileDevice()) {
+      navigate(`/blog/blogItem`, { state: { element } });
+    }
+  };
+
+  const isMobileDevice = () => {
+    return /Mobi|Android/i.test(navigator.userAgent);
   };
 
   return (
@@ -69,7 +78,7 @@ export default function Blog() {
                         className={`table-row ${
                           selectedRow === element.userId ? "table-info" : ""
                         }`}
-                        onClick={() => handleRowClick(element.userId)}
+                        onClick={() => handleRowClick(element)}
                         onDoubleClick={() => handleRowDoubleClick(element)}
                       >
                         <th scope="row">{element.userId}</th>

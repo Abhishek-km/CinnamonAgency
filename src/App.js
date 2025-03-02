@@ -18,24 +18,14 @@ function App() {
       <Router>
         <NavBar />
         <Routes>
-          <Route
-            exact path="/"
-            element={
-              <Home />
-            }
-          />
+          <Route exact path="/" element={<Home />} />
           <Route exact path="/projects" element={<Projects />} />
-          <Route exact path="/services" element={<Services ></Services>} />
+          <Route exact path="/services" element={<Services></Services>} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/careers" element={<Careers />} />
           <Route exact path="/blog" element={<Blog />} />
           <Route exact path="/collaborate" element={<Collaborate />} />
-          <Route
-            exact path="/blog/blogItem"
-            element={
-              <BlogItem />
-            }
-          />
+          <Route exact path="/blog/blogItem" element={<BlogItem />} />
         </Routes>
       </Router>
     </>

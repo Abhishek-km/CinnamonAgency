@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Link } from "react-router-dom";
 
 export default function NavBar() {
@@ -7,7 +7,7 @@ export default function NavBar() {
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">CINNAMON</Link>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="/navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -30,12 +30,12 @@ export default function NavBar() {
             </ul>
             <ul className="navbar-nav ms-3">
               <li className="nav-item">
-              <Link className="btn btn-primary" to="/collaborate" role="button">Lets Collaborate</Link>
+                <Link className="btn btn-primary" to="/collaborate" role="button">Lets Collaborate</Link>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </div>
-  )
+  );
 }
