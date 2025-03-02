@@ -1,7 +1,11 @@
 import React from 'react'
 import Body from './Body'
+import { useEffect } from "react";
 
 export default function Collaborate() {
+  useEffect(() => {
+    document.getElementById('heading').innerHTML = "CINNAMON - Lets Collaborate";
+  }, []);
   return (
     <div>
        <Body

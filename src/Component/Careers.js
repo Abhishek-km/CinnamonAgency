@@ -1,8 +1,12 @@
 import React from 'react'
 import Body from './Body'
+import { useEffect } from "react";
 
 
 export default function Careers() {
+  useEffect(() => {
+    document.getElementById('heading').innerHTML = "CINNAMON - Careers";
+  }, []);
   return (
     <div>
       <Body

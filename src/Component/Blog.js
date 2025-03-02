@@ -38,6 +38,10 @@ export default function Blog() {
     return /Mobi|Android/i.test(navigator.userAgent);
   };
 
+  useEffect(() => {
+    document.getElementById('heading').innerHTML = "CINNAMON - Blog";
+  }, []);
+
   return (
     <>
       <style>

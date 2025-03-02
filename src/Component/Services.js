@@ -1,7 +1,11 @@
 import React from 'react'
 import Body from './Body'
+import { useEffect } from "react";
 
 export default function Services() {
+  useEffect(() => {
+    document.getElementById('heading').innerHTML = "CINNAMON - Services";
+  }, []);
   return (
     <div>
       <Body

@@ -1,7 +1,12 @@
 import React from 'react'
 import Body from './Body'
+import { useEffect } from "react";
 
 export default function Home() {
+    useEffect(() => {
+      document.getElementById('heading').innerHTML = "CINNAMON";
+    }, []);
+
   return (
     <div>
       <Body
